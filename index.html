@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tikim Heaven</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Archivo Black', sans-serif; 
+                background-color: #fff8e1;
+                color: #5d4037;
+            }
+            .navbar-brand {
+                font-weight: 700;
+                color: #ff7043;
+            }
+            .navbar-brand:hover {
+                color: #ff8a65;
+            }   
+            .container {
+                margin-top: 20px;
+            }
+            .headline {
+                text-align: center;
+                color: #ff7043;
+                font-size: 42px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            .story-section {
+                display: flex;
+                align-items: center;    
+                justify-content: center;
+                margin-top: 40px;
+                gap: 20px;
+            }
+            .story-text p {
+                line-height: 1.6;
+            }
+            .story-img {
+                width: 100%;
+                max-width: 450px;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+            .footer {
+                background-color: #ff7043;
+                color: white;
+                text-align: center;
+                padding: 15px 0;
+                margin-top: 50px;
+                width: 100%;
+            }
+            .carousel img {
+                height: 400px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Tikim Heaven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="page1.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">Submit Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="sinigang.jpg" class="d-block w-100" alt="Filipino Dish 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="longsilog.jpg" class="d-block w-100" alt="Filipino Dish 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="halohalo.jpg" class="d-block w-100" alt="Filipino Dish 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="headline">Our Story</div>
+            
+            <div class="story-section">
+                <img src="story.png" alt="Filipino Cuisine" class="story-img"> 
+                <div class="story-text">
+                    <p>Tikim Heaven began with a dream: to preserve and share the rich culinary traditions of the Philippines with the world. Founded by a passionate foodie who grew up savoring the bold and comforting flavors of Filipino dishes, Tikim Heaven is more than just a collection of recipes—it’s a celebration of heritage, family, and community.</p>
+                    <p>Every recipe featured here tells a story of culture and love passed down through generations. From bustling market days to Sunday family feasts, our dishes connect us to the heart of Filipino life.</p>
+                    <p>Join us in this journey of taste and tradition. Together, let's honor the flavors that make the Philippines truly special. Tara, tikim tayo!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Tikim Heaven. All rights reserved. | Designed with love for Filipino food</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

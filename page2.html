@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe - Tikim Heaven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Archivo Black', sans-serif; 
+            background-color: #fff8e1;
+            color: #5d4037;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: #ff7043;
+        }
+        .navbar-brand:hover {
+            color: #ff8a65;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        h2 {
+            text-align: center;
+            color: #ff7043;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .submit-form {
+            background-color: #ffe0b2;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-label {
+            font-weight: 500;
+            color: #5d4037;
+        }
+        .btn-submit {
+            background-color: #ff7043;
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: #ff8a65;
+        }
+        .footer {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tikim Heaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Submit Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Submit Your Recipe</h2>
+        <div class="submit-form">
+            <form>
+                <div class="mb-3">
+                    <label for="recipeName" class="form-label">Recipe Name</label>
+                    <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredients</label>
+                    <textarea class="form-control" id="ingredients" rows="5" placeholder="List your ingredients" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="instructions" class="form-label">Instructions</label>
+                    <textarea class="form-control" id="instructions" rows="5" placeholder="Describe the steps to prepare the dish" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload Image (optional)</label>
+                    <input type="file" class="form-control" id="image">
+                </div>
+                <button type="submit" class="btn btn-submit w-100">Submit Recipe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Tikim Heaven. All rights reserved. | Designed with love for Filipino food</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

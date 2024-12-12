@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikim Heaven Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Archivo Black', sans-serif;
+            background-color: #fff8e1;
+            color: #5d4037;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: #ff7043;
+        }
+        .navbar-brand:hover {
+            color: #ff8a65;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .headline {
+            text-align: center;
+            color: #ff7043;
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .category-title {
+            color: #ff7043;
+            font-size: 28px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .dish-card {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card-body {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .dish-name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #5d4037;
+        }
+        .dish-description {
+            color: #5d4037;
+            margin-top: 10px;
+        }
+        .dish-ingredients, .dish-instructions {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+        .lunch-item, .dinner-item {
+            margin-bottom: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tikim Heaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Submit Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="headline">Our Menu</div>
+
+        <div class="category-title">Breakfast</div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card dish-card">
+                    <img src="tapsilog.jpg" alt="Tapsilog">
+                    <div class="card-body">
+                        <h5 class="dish-name">Tapsilog</h5>
+                        <p class="dish-description">Tapsilog is a Filipino breakfast dish consisting of tapa (cured beef), sinangag (garlic rice), and itlog (fried egg).</p>
+                        <h6>Ingredients:</h6>
+                        <ul class="dish-ingredients">
+                            <li>1 lb beef sirloin or flank steak</li>
+                            <li>3 cloves garlic, minced</li>
+                            <li>2 tablespoons soy sauce</li>
+                            <li>1 tablespoon vinegar</li>
+                            <li>2 tablespoons sugar</li>
+                            <li>2 eggs</li>
+                            <li>2 cups cooked rice</li>
+                            <li>Cooking oil</li>
+                        </ul>
+                        <h6>How to Make:</h6>
+                        <p class="dish-instructions">
+                            1. Marinate the beef with soy sauce, vinegar, sugar, and minced garlic for at least 3 hours. <br>
+                            2. Sauté garlic in oil, add rice and season with salt. Set aside. <br>
+                            3. Fry eggs sunny-side-up. <br>
+                            4. Cook the marinated beef until tender. Serve with rice and eggs.
+                        </p>
+                        <p>Source: <a href="https://www.panlasangpinoy.com/tapsilog-recipe/" target="_blank">Panlasang Pinoy</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card dish-card">
+                    <img src="longsilog.jpg" alt="Longsilog">
+                    <div class="card-body">
+                        <h5 class="dish-name">Longsilog</h5>
+                        <p class="dish-description">Longsilog is a delicious Filipino breakfast consisting of longganisa (sausage), sinangag (garlic rice), and itlog (fried egg).</p>
+                        <h6>Ingredients:</h6>
+                        <ul class="dish-ingredients">
+                            <li>4 pieces longganisa</li>
+                            <li>2 eggs</li>
+                            <li>2 cups cooked rice</li>
+                            <li>3 cloves garlic, minced</li>
+                            <li>Cooking oil</li>
+                        </ul>
+                        <h6>How to Make:</h6>
+                        <p class="dish-instructions">
+                            1. Fry longganisa in oil until golden brown. <br>
+                            2. Sauté garlic in oil, then add cooked rice and fry until golden. <br>
+                            3. Fry eggs sunny-side-up. <br>
+                            4. Serve longganisa with garlic rice and eggs.
+                        </p>
+                        <p>Source: <a href="https://www.filipinocooking.net/longsilog-recipe" target="_blank">Filipino Cooking</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="category-title">Lunch & Dinner</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card dish-card">
+            <img src="adobo.jpg" alt="Adobo">
+            <div class="card-body">
+                <h5 class="dish-name">Adobo</h5>
+                <p class="dish-description">Adobo is a beloved Filipino dish made with pork or chicken, marinated in soy sauce, vinegar, garlic, and spices.</p>
+                <h6>Ingredients:</h6>
+                <ul class="dish-ingredients">
+                    <li>1 lb pork or chicken, cut into pieces</li>
+                    <li>1/4 cup soy sauce</li>
+                    <li>1/4 cup vinegar</li>
+                    <li>5 cloves garlic, minced</li>
+                    <li>2 bay leaves</li>
+                    <li>1/4 teaspoon peppercorns</li>
+                    <li>1 tablespoon sugar</li>
+                    <li>Cooking oil</li>
+                </ul>
+                <h6>How to Make:</h6>
+                <p class="dish-instructions">
+                    1. Marinate the pork or chicken in soy sauce, vinegar, garlic, bay leaves, pepper, and sugar for 30 minutes. <br>
+                    2. Sauté garlic in oil, add the marinated meat, and cook until tender. <br>
+                    3. Simmer for 10 minutes until the sauce thickens. Serve with rice.
+                </p>
+                <p>Source: <a href="https://www.kawalingpinoy.com/chicken-adobo/" target="_blank">Kawaling Pinoy</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card dish-card">
+            <img src="sinigang.jpg" alt="Sinigang na Baboy">
+            <div class="card-body">
+                <h5 class="dish-name">Sinigang na Baboy</h5>
+                <p class="dish-description">Sinigang na Baboy is a sour pork soup made with tamarind, tomatoes, and vegetables.</p>
+                <h6>Ingredients:</h6>
+                <ul class="dish-ingredients">
+                    <li>1 lb pork (belly or ribs)</li>
+                    <li>1 onion, quartered</li>
+                    <li>2 tomatoes, quartered</li>
+                    <li>1 packet sinigang mix or fresh tamarind</li>
+                    <li>Assorted vegetables (kangkong, radish, eggplant)</li>
+                    <li>2 chili peppers</li>
+                </ul>
+                <h6>How to Make:</h6>
+                <p class="dish-instructions">
+                    1. Boil the pork with onion and tomatoes until tender. <br>
+                    2. Add the sinigang mix or tamarind and simmer. <br>
+                    3. Add the vegetables and chili, then cook until tender. Serve hot with rice.
+                </p>
+                <p>Source: <a href="https://www.panlasangpinoy.com/sinigang-na-baboy-recipe/" target="_blank">Panlasang Pinoy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card dish-card">
+            <img src="karekare.jpg" alt="Kare-Kare">
+            <div class="card-body">
+                <h5 class="dish-name">Kare-Kare</h5>
+                <p class="dish-description">Kare-Kare is a Filipino stew made with oxtail, tripes, and vegetables in a rich peanut sauce.</p>
+                <h6>Ingredients:</h6>
+                <ul class="dish-ingredients">
+                    <li>1 lb oxtail or beef shank</li>
+                    <li>1/2 lb tripes (optional)</li>
+                    <li>1/2 lb string beans</li>
+                    <li>1/2 lb eggplant</li>
+                    <li>1/4 cup peanut butter</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tablespoons annatto oil</li>
+                    <li>Fish sauce, to taste</li>
+                </ul>
+                <h6>How to Make:</h6>
+                <p class="dish-instructions">
+                    1. Boil oxtail and tripes until tender. <br>
+                    2. In a separate pan, sauté onions in annatto oil. <br>
+                    3. Add peanut butter, and a bit of the broth to make a thick sauce. <br>
+                    4. Add vegetables and simmer. Serve with shrimp paste on the side.
+                </p>
+                <p>Source: <a href="https://www.kawalingpinoy.com/kare-kare/" target="_blank">Kawaling Pinoy</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card dish-card">
+            <img src="bicolexpress.jpg" alt="Bicol Express">
+            <div class="card-body">
+                <h5 class="dish-name">Bicol Express</h5>
+                <p class="dish-description">Bicol Express is a spicy Filipino dish made with pork, shrimp paste, coconut milk, and chili peppers.</p>
+                <h6>Ingredients:</h6>
+                <ul class="dish-ingredients">
+                    <li>1 lb pork belly, sliced</li>
+                    <li>1 onion, chopped</li>
+                    <li>1 cup coconut milk</li>
+                    <li>5-6 chili peppers, sliced</li>
+                    <li>2 tablespoons shrimp paste</li>
+                    <li>Fish sauce, to taste</li>
+                </ul>
+                <h6>How to Make:</h6>
+                <p class="dish-instructions">
+                    1. Sauté onions and pork until browned. <br>
+                    2. Add shrimp paste, coconut milk, and chili peppers. Simmer until thick. <br>
+                    3. Season with fish sauce and serve hot with rice.
+                </p>
+                <p>Source: <a href="https://www.panlasangpinoy.com/bicol-express-recipe/" target="_blank">Panlasang Pinoy</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="category-title">Desserts</div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card dish-card">
+                    <img src="lecheflan.jpg" alt="Leche Flan">
+                    <div class="card-body">
+                        <h5 class="dish-name">Leche Flan</h5>
+                        <p class="dish-description">Leche Flan is a smooth, creamy caramel custard dessert, popular in Filipino celebrations.</p>
+                        <h6>Ingredients:</h6>
+                        <ul class="dish-ingredients">
+                            <li>1 can sweetened condensed milk</li>
+                            <li>1 can evaporated milk</li>
+                            <li>5 large eggs</li>
+                            <li>1 tsp vanilla extract</li>
+                            <li>1 cup sugar (for caramel)</li>
+                        </ul>
+                        <h6>How to Make:</h6>
+                        <p class="dish-instructions">
+                            1. In a pan, melt the sugar to make the caramel. Pour it into a mold. <br>
+                            2. Beat the eggs, then add the condensed and evaporated milk and vanilla. <br>
+                            3. Pour the mixture over the caramel and steam for 45 minutes.
+                        </p>
+                        <p>Source: <a href="https://www.kawalingpinoy.com/leche-flan/" target="_blank">Kawaling Pinoy</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card dish-card">
+                    <img src="halohalo.jpg" alt="Halo-Halo">
+                    <div class="card-body">
+                        <h5 class="dish-name">Halo-Halo</h5>
+                        <p class="dish-description">Halo-Halo is a popular Filipino dessert made with shaved ice, sweetened fruits, and leche flan, topped with ice cream.</p>
+                        <h6>Ingredients:</h6>
+                        <ul class="dish-ingredients">
+                            <li>Shaved ice</li>
+                            <li>Sweetened jackfruit, bananas, and sweet potato</li>
+                            <li>Leche flan</li>
+                            <li>Sweetened red beans</li>
+                            <li>Purple yam (ube)</li>
+                            <li>Ice cream</li>
+                        </ul>
+                        <h6>How to Make:</h6>
+                        <p class="dish-instructions">
+                            1. Layer the sweetened fruits and red beans in a glass. <br>
+                            2. Add shaved ice, then top with leche flan, ube, and ice cream. <br>
+                            3. Mix everything together and enjoy.
+                        </p>
+                        <p>Source: <a href="https://www.kawalingpinoy.com/halo-halo/" target="_blank">Kawaling Pinoy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tikim Heaven. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
